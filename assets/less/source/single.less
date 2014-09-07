@@ -1,8 +1,13 @@
+.novella-entry-category,
 .novella-site-title,
 .novella-entry-cats,
 .novella-entry-author {
     position: absolute;
     left:-10000px;
+}
+
+#storyProgress {
+    display: none;
 }
 
 .novella-entry-title {
@@ -12,8 +17,23 @@
         font-size:inherit;
         position: relative;
         top:6px;
-        margin-right:40px;
+        margin-right:20px;
         color:@brand-danger;
+    }
+}
+
+.single .novella-entry-title {
+    i {
+        margin-right:40px;
+    }
+}
+
+body {
+    .aesop-article-chapter-wrap .aesop-cover-title {
+        letter-spacing: 10px;
+    }
+    .aesop-component {
+        margin-top:0;
     }
 }
 
@@ -60,3 +80,35 @@
     font-size:0.9rem;
 }
 
+.aesoploves-action {
+    max-width:700px;
+    margin:0 auto;
+    .clearfix();
+    .aesoploves-action-left{
+        width:25%;
+        float:left;
+
+    }
+    .aesoploves-action-right {
+        width:72%;
+        float: left;
+        margin-left:3%;
+
+        .action-title {
+            margin-top:0;
+        }
+    }
+}
+
+#novella-read-more {
+    display: none;
+}
+
+.scroll-nav__section {
+    padding:5em 0;
+    border-bottom:1px solid #eaeaea;
+
+    &:last-child {
+        border-bottom:0;
+    }
+}
