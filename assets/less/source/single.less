@@ -57,16 +57,9 @@ body {
         margin-right:auto;
         display:block;
     }
-    ul {
-        margin:0;
-        padding:0;
-        .clearfix();
 
-        li {
-            list-style: none;
-            float:left;
-            width:50%;
-        }
+    i {
+        color:@link;
     }
 }
 
@@ -78,6 +71,34 @@ body {
     text-transform: uppercase;
     font-family: 'Helvetica', sans-serif;
     font-size:0.9rem;
+}
+
+.aesoploves-list {
+    margin:0;
+    padding:0;
+    .clearfix();
+
+    li {
+        list-style: none;
+        float:left;
+        width:47%;
+
+        &:first-child,
+        &:nth-child(3){
+            margin-right:3%;
+        }
+    }
+}
+
+.aesoploves-features {
+    i {
+        position: relative;
+        top:2px;
+        margin-right:7px;
+        font-size: inherit;
+    }
+
+
 }
 
 .aesoploves-action {

@@ -11,7 +11,7 @@ class aesopLoves{
 		define('AESOPLOVES_URL', get_stylesheet_directory_uri());
 
 		add_action('wp_enqueue_scripts', 			array($this,'style'));
-		add_action('aesop_theme_header_inside_top', array($this,'logo'));
+		add_action('novella_header_inside_top', array($this,'logo'));
 
 		add_filter('novella_read_more', 			array($this,'novella_read_more'));
 
