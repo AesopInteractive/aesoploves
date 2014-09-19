@@ -1,0 +1,68 @@
+body .gform_wrapper {
+    margin:0;
+    max-width:100%;
+    .clearfix();
+    .gform_body {
+        width:78%;
+        float:left;
+        ul,li {
+            .clearfix();
+        }
+        .gfield_label {
+            width:20%;
+        }
+    }
+
+    .right_label input.medium, 
+    .right_label select.medium, 
+    .left_label input.medium, 
+    .left_label select.medium {
+        float:left;
+        width:74%;
+    }
+    input[type=text] {
+        padding:4px 5px;
+        font-size:13px;
+        &:focus {
+            box-shadow: none;
+            border:1px solid @brand-primary;
+        }
+    }
+    .gform_footer.left_label {
+        padding:0;
+        width:22%;
+        float:left;
+        clear:none;
+        margin-top:0;
+
+        input[type=submit] {
+            padding-top:1px;
+            padding-bottom:1px;
+            font-size: 16px;
+            margin-top:-1px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: light;
+        }
+    }
+}
+
+#gforms_confirmation_message {
+    background: white;
+    padding: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 1.4;
+    border:1px solid #eaeaea;
+    .transition(opacity .25s ease-in-out);
+}
+
+.post-developers #gforms_confirmation_message {
+    background: #262626;
+    color: #5BFD4A;
+    line-height: 1.2;
+    font-family: 'Courier New';
+    border:none;
+}

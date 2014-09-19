@@ -16,6 +16,7 @@ class aesopLoves{
 		add_filter('novella_read_more', 			array($this,'novella_read_more'));
 
 		add_filter('novella_chapter_label_text', array($this,'chapter_label'));
+		add_filter('body_class', array($this,'body_class'));
 	}
 
 	//enqueue style
@@ -40,6 +41,20 @@ class aesopLoves{
 
 	function chapter_label(){
 		return 'Sections';
+	}
+
+	function body_class($classes){
+
+		global $post;
+
+		if ( isset( $post ) ) {
+
+			$classes[] = $post->post_type . '-' . $post->post_name;
+
+		}
+
+		return $classes;
+
 	}
 
 }
