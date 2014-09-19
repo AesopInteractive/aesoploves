@@ -1,0 +1,77 @@
+.responsive-padding(){
+    padding-left: 1.4rem;
+padding-right: 1.4rem;
+}
+
+@media(max-width:768px) {
+    body {
+        .scroll-nav__section {
+            padding:2em 0;
+        }
+        .aesoploves-list {
+            li {
+                float:none;
+                width:100%;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+
+    body {
+        .aesop-component, .aesop-documument-component {
+            margin-bottom: 1em;
+        }
+        .aesoploves-action {
+            .aesoploves-action-left {
+                display:none;
+            }
+            .aesoploves-action-right {
+                float:none;
+                width:100%;
+                margin:0;
+
+                .gform_wrapper {
+                    .responsive-padding;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px){
+
+    body {
+        .scroll-nav__section {
+            padding:1em 0;
+        }
+        .novella-entry .novella-entry-mast,
+        .lead.dropcap {
+            margin-bottom: 0;
+        }
+
+        .aesoploves-list {
+            padding-left:0 !important;
+            padding-right:0 !important;
+        }
+        .usecase-title {
+            margin-top:0;
+        }
+        .gform_wrapper .gform_body {
+            margin-bottom:10px;
+        }
+        .gform_wrapper .gform_body,
+        .gform_wrapper .gform_footer.left_label {
+            float:none;
+            width:100%;
+        }
+        .usecase-link,
+        .gform_wrapper input[type=submit] {
+            display: block;
+            width:100%;
+            padding-top:4px;
+            padding-bottom:4px;
+        }
+    }
+}
